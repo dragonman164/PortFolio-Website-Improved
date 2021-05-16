@@ -13,6 +13,12 @@ const FloatingActionButton = ()=>{
     
     },[])
 
+
+    const Data = {
+      fontSize:'30px',
+      margin:'10px'
+    }
+
     return (
         <>
         <div className="fixed-action-btn">
@@ -20,9 +26,9 @@ const FloatingActionButton = ()=>{
         <h5>☎️</h5>
   </p>
   <ul>
-    <li><a href="https://www.linkedin.com/in/sanidhiya-%E2%80%8E-86a427192/" className="btn-floating blue"><LinkedInIcon/></a></li>
-    <li><a href="https://github.com/dragonman164" className="btn-floating black darken-1"><GitHubIcon/></a></li>
-    <li><a href="mailto:sanidhiyafirefox123@gmail.com" className="btn-floating red"><MailIcon /></a></li>
+    <li><a href="https://www.linkedin.com/in/sanidhiya-%E2%80%8E-86a427192/" className="btn-floating blue btn-large"><LinkedInIcon style={Data}/></a></li>
+    <li><a href="https://github.com/dragonman164" className="btn-floating black darken-1 btn-large"><GitHubIcon style={Data}/></a></li>
+    <li><a href="mailto:sanidhiyafirefox123@gmail.com" className="btn-floating red btn-large"><MailIcon style={Data}/></a></li>
   </ul>
 </div>
         </>
