@@ -28,7 +28,7 @@ const DisplayData  = [
     title:'Mobile Application Development',
     listdata: [
       {
-        cardTitle: 'Dart Programming Language',
+        cardTitle: 'Dart',
         imageUrl:'https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg',
         mainUrl: 'https://dart.dev',
   
@@ -129,41 +129,55 @@ const DisplayData  = [
 
 const Home = () => {
 
+ 
     const fontBold = {
         fontWeight: 'bold'
     }
 
     return (
         <>
-            <div className="container scale-out" id="shrink">
-                <h3 style={fontBold}>Hey there 👋, myself SANIDHIYA </h3>
-                <h5 className="black-text darken-4">I am an undergraduate student pursuing B.Tech in Computer Science. I am also a Web Developer,App Developer and Cyber Security Enthusiast</h5>
 
+            <div className="container" id="shrink">
+           
+
+                <h3 style={fontBold} className="animate__animated animate__slideInLeft">Hey there 👋, myself SANIDHIYA </h3>
+                <h5 className="black-text darken-4 animate__animated animate__slideInLeft" >I am an undergraduate student pursuing B.Tech in Computer Science. I am also a Web Developer,App Developer and Cyber Security Enthusiast</h5>
+    
                 <hr style={{ marginTop: '40px', marginButtom: '40px' }} />
-                <h3 style={fontBold}>Know my Technical Skills 🖥️</h3>
-                <h5 className="black-text darken-4">In my ongoing journey, I have mastered the following skills and I expect to learn more things in the upcoming time.</h5>
+                <h3 style={fontBold} className="animate__animated animate__slideInLeft">Know my Technical Skills 🖥️</h3>
+                <h5 className="black-text darken-4 animate__animated animate__slideInLeft" >In my ongoing journey, I have mastered the following skills and I expect to learn more things in the upcoming time.</h5>
 
 
                 <hr style={{ marginTop: '40px', marginButtom: '60px' }} />
 
 
-                <ol className="left-align">
+                <ol className="left-align animate__animated animate__zoomIn">
                 {
-                    DisplayData.map((elem)=>{
+                    DisplayData.map((elem,index)=>{
                         return (
                             <>
-                    <h5 style={fontBold}><li>{elem.title}</li></h5>
+                    <h4 style={fontBold}><li>{elem.title}</li></h4>
                     <div style={{ marginTop: '40px', marginButtom: '40px' }} className="row">
-                    {elem.listdata.map((elem)=>{
+                    {elem.listdata.map((elem,index)=>{
                         return (
                             <>
-                            <div class="col l2 s3" ><a href={elem.mainUrl}><img alt='...' src={elem.imageUrl}  className="icons"/></a></div>
+                          
+                    <div class="hide-on-small-only col l3 s3"  style={{height:'100%'}}>
+                        <div class="card green lighten-3">
+                        <div class="card-content white-text">
+                <img alt='...' src={elem.imageUrl}  className="icons"/>
+                    </div>
+                        <div class="card-action green darken-5">
+                        <span class="card-title white-text" style={fontBold}>{elem.cardTitle}</span>
+                        </div>
+                            </div>
+                            </div>
+                
+                            <div className="col l2 s3 show-on-small" style={{display:"none"}}><a href={elem.mainUrl}><img alt='...' src={elem.imageUrl}  className="icons"/></a></div>
                             </>
                         )
                     }
                     )}
-                      
-                    
                     </div>
                             </>
                         )

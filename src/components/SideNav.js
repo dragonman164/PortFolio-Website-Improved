@@ -11,12 +11,11 @@ const SideNav = ()=>{
     
     useEffect(()=>{
       
-      document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('#sidenav-2');
         M.Sidenav.init(elems, {
           edge:'left',
   
-        });
+
       });
 
       },[]);
@@ -46,9 +45,9 @@ const SideNav = ()=>{
 
 
     <div className="container">
-    <li><a class="waves-effect" href="https://www.linkedin.com/in/sanidhiya-%E2%80%8E-86a427192/"><i class="material-icons"><LinkedInIcon style={Data}/></i>LinkedIn</a></li>
-            <li><a class="waves-effect" href="https://github.com/dragonman164"><i class="material-icons"><GitHubIcon style={Data}/></i>GitHub</a></li>
-            <li><a class="waves-effect" href="mailto:sanidhiyafirefox123@gmail.com"><i class="material-icons"><MailIcon style={Data}/></i>Gmail</a></li>
+    <li><a className="waves-effect" href="https://www.linkedin.com/in/sanidhiya-%E2%80%8E-86a427192/"><i className="material-icons"><LinkedInIcon style={Data}/></i>LinkedIn</a></li>
+            <li><a className="waves-effect" href="https://github.com/dragonman164"><i className="material-icons"><GitHubIcon style={Data}/></i>GitHub</a></li>
+            <li><a className="waves-effect" href="mailto:sanidhiyafirefox123@gmail.com"><i className="material-icons"><MailIcon style={Data}/></i>Gmail</a></li>
         
   
 

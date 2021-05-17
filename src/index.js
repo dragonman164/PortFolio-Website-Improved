@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import '../node_modules/materialize-css/dist/css/materialize.min.css';
+import '../node_modules/animate.css/animate.min.css';
+
 import {BrowserRouter as Router} from 'react-router-dom';
 
 

@@ -23,25 +23,10 @@ footer {
 
 }
 
-#navbar {
-  overflow: hidden;
-  background-color: #333;
+nav{
+  z-index: 1;
 }
 
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
 
 .sticky {
   position: fixed;
@@ -61,7 +46,12 @@ nav,header, main, footer,#shrink{
 }
 
 .icons{
-  height: 85px;
+  height: 80px;
+ 
+}
+
+.adjust{
+  width: 70%;
 }
 
 @media only screen and (max-width: 516px)
@@ -70,5 +60,19 @@ nav,header, main, footer,#shrink{
     height: 60px;
   }
 
+
 }
+
+@media only screen and (max-width: 1200px)
+{
+  .adjust{
+    width: 100%;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+}
+
+.carousel { 
+  height: 350px !important;
+  }
 

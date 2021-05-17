@@ -23,17 +23,17 @@ const NavBar = ()=>{
         <li><Link to="/about">About</Link></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li><a href="https://medium.com/@sanidhiyafirefox123" class="waves-effect waves-light btn ">Blogs on Medium</a></li>
+        <li><a href="https://medium.com/@sanidhiyafirefox123" className="waves-effect waves-light btn ">Blogs on Medium</a></li>
       </ul>
     </div>
   </nav>
 
   <ul className="sidenav" id="sidenav-1">
-    <li><a href="#!">Home</a></li>
-    <li><a href="#!">About</a></li>
-    <li><a href="#!">Projects</a></li>
-    <li><a href="#!">Contact</a></li>
-    <li><a href="https://medium.com/@sanidhiyafirefox123" class="waves-effect waves-light btn ">Blogs on Medium</a></li>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/about">About</Link></li>
+    <li><Link to="/projects">Projects</Link></li>
+    <li><Link to="/contact">Contact</Link></li>
+    <li><a href="https://medium.com/@sanidhiyafirefox123" className="waves-effect waves-light btn ">Blogs on Medium</a></li>
   </ul>
           
           

@@ -22,9 +22,9 @@ const FloatingActionButton = ()=>{
     return (
         <>
         <div className="fixed-action-btn">
-  <p className="btn-floating btn-large red">
-        <h5>☎️</h5>
-  </p>
+
+        <h5 className="btn-floating btn-large red" style={Data}>☎️</h5>
+
   <ul>
     <li><a href="https://www.linkedin.com/in/sanidhiya-%E2%80%8E-86a427192/" className="btn-floating blue btn-large"><LinkedInIcon style={Data}/></a></li>
     <li><a href="https://github.com/dragonman164" className="btn-floating black darken-1 btn-large"><GitHubIcon style={Data}/></a></li>
