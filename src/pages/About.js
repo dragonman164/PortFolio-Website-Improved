@@ -4,19 +4,13 @@ import {useEffect} from 'react';
 
 const TableData = [
   {
-      Year:'2020',
+      Year:'2021',
       Degree:'B.Tech(2nd Semester)',
       Institution:'TIET,Patiala',
-      CGPA:'9.54',
+      CGPA:'9.16 (Upto 5th Semester)',
 
   },
-  {
-      Year:'2020',
-      Degree:'B.Tech(1st Semester)',
-      Institution:'TIET,Patiala',
-      'CGPA':'9.22',
-      
-  },
+ 
   {
       Year:'2019',
       Degree:'XII',

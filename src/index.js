@@ -5,14 +5,15 @@ import App from './App';
 import '../node_modules/materialize-css/dist/css/materialize.min.css';
 import '../node_modules/animate.css/animate.min.css';
 
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <Router>
+  <HashRouter>
     <App />
-    </Router>
+    </HashRouter>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
